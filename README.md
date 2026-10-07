@@ -24,12 +24,6 @@ Six interactive, dynamically-rendered views, all updating in real time with no p
 
 Supporting logic includes a **flag glossary**, **risk classification**, **trajectory computation**, **flag co-occurrence analysis**, live search, and flag filtering — roughly 1,000 lines of JavaScript (`script.js`, the risk section) plus the risk-module styling (`styles_additions.css`).
 
-## Screenshots
-
-_Add screenshots of the running dashboard to `docs/screenshots/` and embed them here — the app needs the private dataset to run, so these images are how reviewers see it. Suggested captures: the leaderboard, an owner panel, a store drill-down, and the heatmap._
-
-<!-- ![Leaderboard](docs/screenshots/02_leaderboard.png) -->
-
 ## Team context
 
 Built for **MIS 4400 (Spring 2026)** at Michigan Technological University as a multi-team analytics project for the client "Nova." I built the **Risk Results Summary module** (everything described above). The top performance chart at the top of the page (SQLite + Chart.js) was built by a teammate and is included here for context — it's clearly marked in the code (`// TOP DASHBOARD — unchanged`). The dashboard was an academic deliverable and was not deployed to production.
@@ -43,7 +37,7 @@ python -m http.server 8000
 # then open http://localhost:8000
 ```
 
-It expects a `data/` folder with the datasets described in [`data/README.md`](data/README.md). The real franchise data is **not committed** (it's client/coursework data); supply your own CSVs matching the documented schema, or view the screenshots.
+It expects a `data/` folder with the datasets described in [`data/README.md`](data/README.md). The real franchise data is **not committed** (it's client/coursework data); supply your own CSVs matching the documented schema.
 
 ## Repository Structure
 
@@ -54,7 +48,6 @@ It expects a `data/` folder with the datasets described in [`data/README.md`](da
 ├── styles_additions.css    # risk-module styling
 ├── data/
 │   └── README.md           # expected data files + schema (real data withheld)
-├── docs/screenshots/       # add screenshots here
 ├── LICENSE
 └── README.md
 ```
